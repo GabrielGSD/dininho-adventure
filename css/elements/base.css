@@ -1,0 +1,10 @@
+body{
+    background-color: #FAD121;
+    background-image: linear-gradient(180.58deg, #7E5002 25.7%, #E69405 44.23%, #FAD121 98.65%);
+    background-repeat: no-repeat;
+    font-family: 'Nunito', sans-serif;
+    color: #3D1132;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+}
