@@ -1,0 +1,16 @@
+.button-dino{
+    background-image: url('../../img/Button.png');
+    display: block;
+    background-size: auto 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    text-indent: -9999px;
+    margin-bottom: var(--gap-medium);
+    margin-top: var(--gap-medium);
+    transition: transform 100ms linear;
+}
+
+.button-dino:hover{
+    transform: scale(1.1);
+}
