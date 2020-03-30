@@ -1,6 +1,7 @@
 .separator-dino{
 
     --half-width-egg: 11px;
+    --half-widht-eggs: 30px;
 
     background-image: url('../../img/egg.png');
     background-size: auto 22px;
@@ -15,12 +16,24 @@
     margin-top: var(--gap-medium);
 }
 
+/*variação -> pega o que já tem no código e adiciona uma variacao nova para esse componente*/
+.separator-dino.-all{
+    background-image: url("../../img/eggs.png");
+    background-size: 60px auto;
+    height: 58px;
+}
+
 .separator-dino::before,
 .separator-dino::after{
     content: '';
     width: calc(50% - var(--half-width-egg) - var(--gap-very-small));
     height: 4px;
     background-color: var(--color-first);
+}
+
+.separator-dino.-all::before,
+.separator-dino.-all::after{
+    width: calc(50% - var(--half-widht-eggs) - var(--gap-very-small));
 }
 
 .separator-dino::before{
