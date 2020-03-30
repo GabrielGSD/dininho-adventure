@@ -14,3 +14,11 @@
 .button-dino:hover{
     transform: scale(1.1);
 }
+
+@media(min-width: 600px){
+    .button-dino{
+        background-size: auto 80px;
+        height: 80px;
+    }
+    
+}

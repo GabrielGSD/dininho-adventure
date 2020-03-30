@@ -2,12 +2,12 @@
     display: flex;
     justify-content: center;
     position: relative;
-    min-height: 272px;
     height: 42%;
-    min-height: 275px;
-    background: url("../../img/floor.png") bottom center / auto 100px repeat no-repeat,
-                url('../../img/mountain.png') bottom center /contain no-repeat,
-                url('../../img/mountain2.png') bottom center /contain no-repeat,
+    min-height: 390px;
+    max-height: 420px;
+    background: url("../../img/floor.png") bottom center / auto 150px repeat no-repeat,
+                url('../../img/mountain.png') bottom center /contain repeat,
+                url('../../img/mountain2.png') bottom center /contain repeat,
                 url("../../img/sky.png") top center/contain no-repeat var(--color-sky); 
 }
 
@@ -23,5 +23,5 @@
 .header-dino > .dininho{
     position: absolute;
     bottom: calc(var(--gap-big) + 90px);
-    width: 30px;
+    width: 40px;
 }
