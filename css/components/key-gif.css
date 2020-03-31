@@ -1,0 +1,52 @@
+.key-gif {
+    position: fixed;
+    background-color: var(--color-dino);
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    z-index: -2;
+
+    transition: opacity 100ms linear;
+}
+
+.key-gif.-active {
+    z-index: 2;
+    opacity: 1;
+}
+
+.key-gif::after {
+    content: '';
+    background-image: url("../../img/interrogachave1.png");
+    width: 80px;
+    height: 160px;
+    position: absolute;
+    z-index: 1;
+
+    animation: 600ms linear infinite easterEgg;
+}
+
+@keyframes easterEgg {
+    0% {
+        background-image: url("../../img/interrogachave1.png");
+    }
+    20% {
+        background-image: url("../../img/interrogachave2.png");
+    }
+    40% {
+        background-image: url("../../img/interrogachave3.png");
+    }
+    60% {
+        background-image: url("../../img/interrogachave4.png");
+    }
+    80% {
+        background-image: url("../../img/interrogachave5.png");
+    }
+    100% {
+        background-image: url("../../img/interrogachave6.png");
+    }
+
+}
